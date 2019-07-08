@@ -1,0 +1,17 @@
+jupyter nbconvert \
+  --ExecutePreprocessor.allow_errors=True \
+  --ExecutePreprocessor.timeout=-1 \
+  --FilesWriter.build_directory=../results \
+  --execute ./notebooks/03-renku/01-GettingStarted.ipynb
+  
+jupyter nbconvert \
+  --ExecutePreprocessor.allow_errors=True \
+  --ExecutePreprocessor.timeout=-1 \
+  --FilesWriter.build_directory=../results \
+  --execute ./notebooks/03-renku/02-1-BuildPipeline.ipynb
+  
+jupyter nbconvert \
+  --ExecutePreprocessor.allow_errors=True \
+  --ExecutePreprocessor.timeout=-1 \
+  --FilesWriter.build_directory=../results \
+  --execute ./notebooks/03-renku/02-2-UpdatePipeline.ipynb
